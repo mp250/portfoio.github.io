@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		html 
+		{
+			scroll-behavior: smooth;
+		}
+		.container
+		{
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: 150px 200px 200px 200px 200px;
+			grid-column-gap: 5px;
+			grid-row-gap: 5px;
+
+		}
+		.box1
+		{
+			background: #32a891;
+			grid-column-start: 1;
+			grid-column-end: 3;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: monospace;
+			font-size: 40px;
+			position: sticky;
+			top: 0;
+			padding-left: 100px;
+		}
+		.box2
+		{
+			background: #1a000d;
+			display: flex;
+			justify-content: center;
+			align-items: center;	
+		}
+		.box3
+		{
+			/*background: #53ff1a;*/
+			border: 5px solid black;	
+			display: flex;
+			justify-content: center;
+			align-items: center;	
+		}
+		.box4
+		{
+			background: rgb(51, 153, 255);	
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.box5
+		{
+			/*background: rgb(0, 102, 102);*/
+			border: 5px solid blue;	
+		}
+		.box6
+		{
+			background: rgb(153, 51, 0);
+			display: flex;
+			justify-content: center;
+			align-items: center;	
+		}
+		.box7
+		{
+			/*background: rgb(153, 0, 51);*/
+			border: 5px solid brown;
+				
+		}
+		.box8
+		{
+			background: rgb(204, 102, 0);	
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.box9
+		{
+			/*background: rgb(102, 102, 51);*/
+			border: 5px solid orange;	
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 30px;
+			
+		}
+		a 
+		{
+			text-decoration: none;
+			color: black;
+		}
+		a:hover
+		{
+			background: black;
+			color: white;
+			transition: all .5s;
+			border-radius: 5px;
+			text-decoration-line: underline;
+			text-decoration-color: yellow;
+		}
+		h1
+		{
+			color: white;
+			font-size: 50px;
+		}
+		.box2:hover
+		{
+			background: gray;
+			transition: all .5s;
+			border: 5px inset darkred;
+		}
+		.box3:hover
+		{
+			background: gray;
+			color: white;
+			transition: all .5s;
+		}
+		.box4:hover
+		{
+			background: grey;
+			transition: all .5s;
+			border: 5px inset blue;
+		}
+		.box5:hover
+		{
+			background: gray;
+			color: white;
+			transition: all .5s;
+		}
+		.box6:hover
+		{
+			background: gray;
+			transition: all .5s;
+			color: blue;
+			border: 5px ridge lime;
+		}
+		.box7:hover
+		{
+			background: gray;
+			transition: all .5s;
+		}
+		.box8:hover
+		{
+			background: gray;
+			transition: all .5s;
+			color: blue;
+			border: 5px ridge purple;
+		}
+		.box9:hover
+		{
+			background: gray;
+			transition: all .5s;
+		}
+
+		p 
+		{
+			font-size: 50px;
+			text-align: center;
+		}
+		li:before
+		{
+			content: "\21E8";
+			color: darkred;
+		}
+		ul 
+		{
+			list-style: none;
+		}
+		i 
+		{
+			color: lime;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box1">
+			<header>
+				<i class="fa fa-home" style="font-size: 35px;"></i><a href="#Introduction">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user"></i><a href="#About Us">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"></i><a href="#Contact Us">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-skype"></i><a href="#Skills">Skills</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			</header>
+		</div>
+		<div class="box2" id="Introduction">
+			<h1>Introduction</h1>
+		</div>
+		<div class="box3">
+			<p>I am Meet Patel from Baroda.</p>
+		</div>
+		<div class="box4" id="About Us">
+			<h1>About Us</h1>
+		</div>
+		<div class="box5">
+			<p>I am a sofware engineer.</p>
+		</div>
+		<div class="box6" id="Contact Us">
+			<h1>Contact Us</h1>
+		</div>
+		<div class="box7">
+			<p><a href="mailto:meet2501patel@gmail.com">meet2501patel@gmail.com</a></p>
+		</div>
+		<div class="box8" id="Skills">
+			<h1>Skills</h1>
+		</div>
+		<div class="box9">
+			<ul>
+				<li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
+				<li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+				<li><a href="https://www.w3schools.com/js/default.asp">JAVASCRIPT</a></li>
+				<li><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">BOOTSTRAP</a></li>
+				<li><a href="https://www.w3schools.com/graphics/svg_intro.asp">SVG</a></li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
